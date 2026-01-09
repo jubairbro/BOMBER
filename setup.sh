@@ -12,7 +12,7 @@ echo -e "${CYAN}
    _____ ______ _   _  _____ ______ _____ 
   / ____|  ____| \ | |/ ____|  ____|_   _|
  | (___ | |__  |  \| | (___ | |__    | |  
-  \___ \|  __| | . \` |\___ \|  __|   | |  
+  \___ \|  __| | . ` |\___ \|  __|   | |  
   ____) | |____| |\  |____) | |____ _| |_ 
  |_____/|______|_| \_|_____/|______|_____|
                                           
@@ -56,11 +56,11 @@ if [ ! -d "$BIN_PATH" ]; then
 fi
 
 # Create the 'bomb' executable
-cat <<EOF > "$BIN_PATH/bomb"
+cat <<EOT > "$BIN_PATH/bomb"
 #!/bin/bash
-cd \$HOME/BOMBER
-python3 main.py "\$@"
-EOF
+cd $HOME/BOMBER
+python3 main.py "$@"
+EOT
 
 # Give permission
 chmod +x "$BIN_PATH/bomb"
