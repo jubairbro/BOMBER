@@ -8,27 +8,19 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 clear
-echo -e "${CYAN}
-   _____ ______ _   _  _____ ______ _____ 
-  / ____|  ____| \ | |/ ____|  ____|_   _|
- | (___ | |__  |  \| | (___ | |__    | |  
-  \___ \|  __| | . ` |\___ \|  __|   | |  
-  ____) | |____| |\  |____) | |____ _| |_ 
- |_____/|______|_| \_|_____/|______|_____|
-                                          
-      ${YELLOW}BOMBER INSTALLER SCRIPT${NC}
-"
+echo -e "${CYAN}SENSEI INSTALLER SCRIPT${NC}"
+echo -e "${YELLOW}=======================${NC}"
 
 # 1. Update Packages
 echo -e "${YELLOW}[*] Checking System Packages...${NC}"
 pkg update -y > /dev/null 2>&1
 pkg upgrade -y > /dev/null 2>&1
 
-# 2. Install Git & Python (Critical for cloning)
+# 2. Install Git & Python
 echo -e "${YELLOW}[*] Installing Git & Python...${NC}"
 pkg install git python -y > /dev/null 2>&1
 
-# 3. CLONE OR UPDATE REPOSITORY (Main Logic)
+# 3. CLONE OR UPDATE REPOSITORY
 cd $HOME
 if [ -d "BOMBER" ]; then
     echo -e "${GREEN}[*] Tool directory found! Updating...${NC}"
@@ -47,25 +39,19 @@ pip install requests rich pyfiglet fake-useragent > /dev/null 2>&1
 # 5. Setup Global Command
 echo -e "${YELLOW}[*] Creating Shortcut Command...${NC}"
 
-# Termux Binary Path
 BIN_PATH="$PREFIX/bin"
-
-# Check if bin exists, else fallback
 if [ ! -d "$BIN_PATH" ]; then
     BIN_PATH="/usr/bin"
 fi
 
-# Create the 'bomb' executable
-cat <<EOT > "$BIN_PATH/bomb"
+# Create the executable
+cat <<EOF > "$BIN_PATH/bomb"
 #!/bin/bash
-cd $HOME/BOMBER
-python3 main.py "$@"
-EOT
+cd \$HOME/BOMBER
+python3 main.py "\$@"
+EOF
 
-# Give permission
 chmod +x "$BIN_PATH/bomb"
-
-# Setup alias BOMB
 cp "$BIN_PATH/bomb" "$BIN_PATH/BOMB"
 chmod +x "$BIN_PATH/BOMB"
 
