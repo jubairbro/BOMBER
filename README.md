@@ -51,7 +51,7 @@
   <h3 style="color: #ffff00;">📥 ONE-LINE INSTALLATION</h3>
   <div style="background: #000; padding: 15px; border-radius: 10px; border: 2px solid #00ff00;">
     
-      bash &lt;(curl -Ls https://raw.githubusercontent.com/jubairbro/BOMBER/main/setup.sh)
+      bash <(curl -Ls https://raw.githubusercontent.com/jubairbro/BOMBER/main/setup.sh)
   </div>
   <br>
   <img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif" width="400" alt="Installation">
