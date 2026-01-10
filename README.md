@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
   <img src="https://media1.tenor.com/m/9p20c345F-oAAAAC/lelouch-anime.gif" width="700" alt="SENSEI Banner">
   <br><br>
   <h1 style="color: #00ff00; text-shadow: 0 0 15px #00ff00, 0 0 5px #ffffff;">SENSEI - The Ultimate SMS Attacker</h1>
