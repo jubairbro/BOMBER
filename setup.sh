@@ -7,37 +7,73 @@ YELLOW='\033[1;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
+# --- UI ELEMENTS ---
+T_TOP="┌──────────────────────────────────────────┐"
+T_MID="│"
+T_BOT="└──────────────────────────────────────────┘"
+SEP="├──────────────────────────────────────────┤"
+
 clear
-echo -e "${CYAN}==========================================${NC}"
-echo -e "${CYAN}      SENSEI AUTOMATIC INSTALLER          ${NC}"
-echo -e "${CYAN}==========================================${NC}"
 
-# 1. ENVIRONMENT SETUP
-echo -e "${YELLOW}[*] Updating system packages...${NC}"
-pkg update -y > /dev/null 2>&1
-pkg upgrade -y > /dev/null 2>&1
+# --- HEADER ---
+echo -e "${CYAN}${T_TOP}"
+echo -e "${T_MID}          SENSEI ULTIMATE INSTALLER         ${T_MID}"
+echo -e "${T_MID}             Version: 6.7 Pro               ${T_MID}"
+echo -e "${CYAN}${T_BOT}${NC}"
 
-echo -e "${YELLOW}[*] Installing Git & Python...${NC}"
-pkg install git python -y > /dev/null 2>&1
+# --- STEP 0: PROCEED CONFIRMATION ---
+echo -e "\n${CYAN}►${NC} Do you want to proceed with installation? [Y/n]"
+read -p "  » " PROCEED
+PROCEED=${PROCEED:-Y}
 
-# 2. REPOSITORY MANAGEMENT
+if [[ ! "$PROCEED" =~ ^[Yy]$ ]]; then
+    echo -e "${RED}[!] Installation Aborted.${NC}"
+    exit 1
+fi
+
+# --- STEP 1: OPTIONAL UPDATE ---
+echo -e "\n${CYAN}►${NC} Update system packages and mirrors? [y/N]"
+read -p "  » " UPDATE_CHOICE
+UPDATE_CHOICE=${UPDATE_CHOICE:-N}
+
+if [[ "$UPDATE_CHOICE" =~ ^[Yy]$ ]]; then
+    echo -e "${YELLOW}  » Updating mirrors and core packages...${NC}"
+    pkg update -y > /dev/null 2>&1
+else
+    echo -e "${YELLOW}  » Skipping full update...${NC}"
+fi
+
+# --- STEP 2: NECESSARY PACKAGES ---
+echo -e "\n${CYAN}┌─ Checking Essential Dependencies${NC}"
+for pkg in git python mpv; do
+    if command -v $pkg &> /dev/null; then
+        echo -e "${CYAN}│${NC}  » $pkg is already installed."
+    else
+        echo -e "${CYAN}│${NC}  » Installing $pkg..."
+        pkg install $pkg -y > /dev/null 2>&1
+    fi
+done
+echo -e "${CYAN}└──────────────────────────────────────────${NC}"
+
+# --- STEP 3: REPOSITORY SETUP ---
+echo -e "\n${CYAN}►${NC} Setting up repository in HOME..."
 cd $HOME
 if [ -d "BOMBER" ]; then
-    echo -e "${GREEN}[*] Existing directory found. Pulling updates...${NC}"
+    echo -e "${YELLOW}  » Directory exists. Pulling latest code...${NC}"
     cd BOMBER
     git pull > /dev/null 2>&1
 else
-    echo -e "${GREEN}[*] Cloning repository from GitHub...${NC}"
+    echo -e "${YELLOW}  » Cloning SENSEI repository...${NC}"
     git clone https://github.com/jubairbro/BOMBER > /dev/null 2>&1
     cd BOMBER
 fi
 
-# 3. DEPENDENCY INSTALLATION
-echo -e "${YELLOW}[*] Installing required Python modules...${NC}"
+# --- STEP 4: PYTHON MODULES ---
+echo -e "\n${CYAN}►${NC} Installing Python dependencies..."
 pip install requests rich pyfiglet fake-useragent > /dev/null 2>&1
 
-# 4. GLOBAL COMMAND SETUP
-echo -e "${YELLOW}[*] Creating global 'bomb' command...${NC}"
+# --- STEP 5: GLOBAL COMMAND SETUP ---
+echo -e "\n${CYAN}►${NC} Creating global 'bomb' command..."
 
 # Detect Binary Path
 if [ -d "$PREFIX/bin" ]; then
@@ -46,15 +82,22 @@ else
     BIN_DIR="/usr/bin"
 fi
 
-# Create the executable wrapper
-echo '#!/bin/bash' > "$BIN_DIR/bomb"
-echo 'cd $HOME/BOMBER && python3 main.py "$@"' >> "$BIN_DIR/bomb"
+# Create the wrapper
+# We use cd $HOME/BOMBER so that git operations and relative paths work perfectly
+echo "#!/bin/bash" > "$BIN_DIR/bomb"
+echo "cd $HOME/BOMBER && python3 main.py \"\$@\"" >> "$BIN_DIR/bomb"
 
-# Apply Permissions
+# Permissions
 chmod +x "$BIN_DIR/bomb"
 cp "$BIN_DIR/bomb" "$BIN_DIR/BOMB" 2>/dev/null
 
-echo -e "\n${GREEN}[✔] INSTALLATION SUCCESSFUL!${NC}"
-echo -e "${CYAN}------------------------------------------${NC}"
-echo -e "You can now run the tool by typing: ${GREEN}bomb${NC}"
-echo -e "${CYAN}------------------------------------------${NC}"
+# --- FINAL FOOTER ---
+clear
+echo -e "${GREEN}${T_TOP}"
+echo -e "${T_MID}       INSTALLATION COMPLETED! (✔)          ${T_MID}"
+echo -e "${GREEN}${SEP}"
+echo -e "${T_MID}  » Command: ${CYAN}bomb${GREEN} or ${CYAN}BOMB${GREEN}               ${T_MID}"
+echo -e "${T_MID}  » Developer: @JubairZ                     ${T_MID}"
+echo -e "${GREEN}${T_BOT}${NC}"
+
+echo -e "\n${CYAN}►${NC} Type ${GREEN}bomb${NC} to start the tool now."
