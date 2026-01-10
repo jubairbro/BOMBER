@@ -25,7 +25,7 @@
       <small>Moves through the web like a shadow, its presence unfelt and unseen.</small>
     </td>
     <td align="center">
-      <img src="https://media1.tenor.com/m/c5j2cT243Y4AAAAd/gojo-satoru-jujutsu-kaisen.gif" width="120">
+      <img src="" width="120">
       <br>
       <b>Unrivaled Bypass</b>
       <br>
@@ -34,7 +34,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://media1.tenor.com/m/p8d8sB2j4qAAAAAC/eren-yeager.gif" width="120">
+      <img src="https://media1.tenor.com/m/67i3mnDO7hkAAAAC/hacking-guy-with-toy-laptor.gif" width="120">
       <br>
       <b>Instant Deployment</b>
       <br>
