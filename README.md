@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://media.tenor.com/O75TtjA8LVQAAAAi/%E8%87%AA%E7%94%B1%E5%BC%8F%E8%8B%B1%E9%9B%84-gs.gif" width="600" alt="SENSEI Banner">
-  <h1>SENSEI - The Ultimate SMS Attacker</h1>
+  <h1>SENSEI - The Ultimate SMS BOMB Attacker</h1>
   <p>A powerful and advanced SMS bombing tool designed for penetration testing and educational purposes.</p>
   
   <p>
@@ -18,7 +18,7 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://media1.tenor.com/m/Z6I1T32J4mQAAAAC/light-yagami-death-note.gif" width="120">
+      <img src="https://media1.tenor.com/m/bq0AJNOjAK0AAAAC/good-morning.gif" width="120">
       <br>
       <b>Ghost Simulation</b>
       <br>
