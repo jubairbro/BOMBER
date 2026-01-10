@@ -17,8 +17,8 @@ clear
 
 # --- HEADER ---
 echo -e "${CYAN}${T_TOP}"
-echo -e "${T_MID}          SENSEI ULTIMATE INSTALLER         ${T_MID}"
-echo -e "${T_MID}             Version: 6.7 Pro               ${T_MID}"
+echo -e "${T_MID}          SENSEI ULTIMATE INSTALLER         "
+echo -e "${T_MID}             Version: 6.7 Pro               "
 echo -e "${CYAN}${T_BOT}${NC}"
 
 # --- STEP 0: PROCEED CONFIRMATION ---
