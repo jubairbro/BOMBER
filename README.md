@@ -75,7 +75,7 @@ bomb
 ```
 
 <div align="center">
-  <img src="https://media1.tenor.com/m/YDbv8OO0T7YAAAAC/code-geass-lelouch.gif" width="500" alt="Usage GIF">
+  <img src="https://media1.tenor.com/m/Hz7wf_bNO5cAAAAC/lelouch-darts.gif" width="500" alt="Usage GIF">
 </div>
 
 ---
