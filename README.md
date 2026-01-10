@@ -41,7 +41,7 @@
       <small>Unleash its full power with a single, decisive command.</small>
     </td>
     <td align="center">
-      <img src="https://media1.tenor.com/m/pXyTSSg8eXQAAAAC/levi-ackerman-anime.gif" width="120">
+      <img src="https://media1.tenor.com/m/PMITaIPBRBkAAAAC/hack-pc.gif" width="120">
       <br>
       <b>Constant Evolution</b>
       <br>
