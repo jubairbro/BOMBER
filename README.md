@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://media.tenor.com/O75TtjA8LVQAAAAi/%E8%87%AA%E7%94%B1%E5%BC%8F%E8%8B%B1%E9%9B%84-gs.gif" width="600" alt="SENSEI Banner">
-  <h1>SENSEI - The Ultimate SMS BOMB Attacker</h1>
+  <h1>BOMB SENSEI - The Ultimate SMS BOMB Attacker</h1>
   <p>A powerful and advanced SMS bombing tool designed for penetration testing and educational purposes.</p>
   
   <p>
