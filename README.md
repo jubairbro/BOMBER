@@ -4,7 +4,7 @@
   <p>A powerful and advanced SMS bombing tool designed for penetration testing and educational purposes.</p>
   
   <p>
-    <img src="https://img.shields.io/badge/Version-1.0.2-blue.svg" alt="Version">
+    <img src="https://img.shields.io/badge/Version-2.0.1-blue.svg" alt="Version">
     <img src="https://img.shields.io/badge/Platform-Termux-yellow.svg" alt="Platform">
     <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
     <img src="https://img.shields.io/github/stars/jubairbro/BOMBER?style=social" alt="Stars">
@@ -102,6 +102,6 @@ bomb
     </tr>
   </table>
   <br>
-  <p>© 2026 BOMB SENSEI Tool | Version 1.0.2</p>
+  <p>© 2026 BOMB SENSEI Tool | Version 2.0.1</p>
 </div>
 
