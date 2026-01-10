@@ -25,7 +25,7 @@
       <small>Moves through the web like a shadow, its presence unfelt and unseen.</small>
     </td>
     <td align="center">
-      <img src="" width="120">
+      <img src="https://media.tenor.com/G4GdvEotPhoAAAAi/web-hack-hacker.gif" width="120">
       <br>
       <b>Unrivaled Bypass</b>
       <br>
