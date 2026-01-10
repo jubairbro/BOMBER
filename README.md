@@ -15,7 +15,7 @@
   <div style="background: #111; padding: 15px; border-radius: 10px; border-left: 3px solid #00ffff; width: 200px; text-align: center;">
     <img src="https://media1.tenor.com/m/c5j2cT243Y4AAAAd/gojo-satoru-jujutsu-kaisen.gif" width="100">
     <h4 style="color: #00ffff;">Unrivaled Bypass</h4>
-    <small style="color: #ccc;">Treats advanced security systems like Bangladesh as a minor inconvenience.</small>
+    <small style="color: #ccc;">Treats advanced security systems like Cloudflare as a minor inconvenience.</small>
   </div>
   <div style="background: #111; padding: 15px; border-radius: 10px; border-left: 3px solid #ff00ff; width: 200px; text-align: center;">
     <img src="https://media1.tenor.com/m/p8d8sB2j4qAAAAAC/eren-yeager.gif" width="100">
@@ -35,9 +35,11 @@
   <h3 style="color: #ffff00;">📥 ONE-LINE INSTALLATION COMMAND</h3>
   <p style="color: #ccc;">Copy and paste this command into your terminal.</p>
 </div>
-``````bash
+
+```bash
 bash <(curl -Ls https://raw.githubusercontent.com/jubairbro/BOMBER/main/setup.sh)
-``````html
+```
+
 <div align="center">
   <br>
   <img src="https://media1.tenor.com/m/NKe2d2My1PAAAAAC/light-yagami-typing.gif" width="500" alt="Installation">
@@ -48,9 +50,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/jubairbro/BOMBER/main/setup.sh
 <div align="center">
   <h3 style="color: #00ffff;">AFTER INSTALLATION, ACTIVATE SENSEI WITH:</h3>
 </div>
-``````bash
+
+```bash
 bomb
-``````html
+```
+
 <div align="center">
   <br>
   <img src="https://media1.tenor.com/m/YDbv8OO0T7YAAAAC/code-geass-lelouch.gif" width="500" alt="Usage">
