@@ -93,7 +93,7 @@ bomb
 
 <div align="center">
   <h3>J U B A I R  B R O</h3>
-  <img src="https://media1.tenor.com/m/DkQLtm3ZMo4AAAAC/johan-liebert-monster.gif" width="400">
+  <img src="https://media1.tenor.com/m/C7_je8ly7J4AAAAC/johan-johan-liebert.gif" width="400">
   <br><br>
   <table>
     <tr>
