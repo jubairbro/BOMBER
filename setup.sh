@@ -94,10 +94,13 @@ cp "$BIN_DIR/bomb" "$BIN_DIR/BOMB" 2>/dev/null
 # --- FINAL FOOTER ---
 clear
 echo -e "${GREEN}${T_TOP}"
-echo -e "${T_MID}       INSTALLATION COMPLETED! (✔)          ${T_MID}"
+echo -e "${T_MID}       INSTALLATION COMPLETED! (✔)          "
 echo -e "${GREEN}${SEP}"
-echo -e "${T_MID}  » Command: ${CYAN}bomb${GREEN} or ${CYAN}BOMB${GREEN}               ${T_MID}"
-echo -e "${T_MID}  » Developer: @JubairZ                     ${T_MID}"
+echo -e "${T_MID}  » Command: ${CYAN}bomb${GREEN} or ${CYAN}BOMB${GREEN}               "
+echo -e "${T_MID}  » Developer: @JubairZ                     "
 echo -e "${GREEN}${T_BOT}${NC}"
 
-echo -e "\n${CYAN}►${NC} Type ${GREEN}bomb${NC} to start the tool now."
+echo -e "\n${CYAN}►${NC}Next Time Type ${GREEN}bomb${NC} to start the tool."
+
+sleep 10
+bomb
