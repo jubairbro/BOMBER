@@ -61,7 +61,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/jubairbro/BOMBER/main/setup.sh
 ```
 
 <div align="center">
-  <img src="https://media1.tenor.com/m/NKe2d2My1PAAAAAC/light-yagami-typing.gif" width="500" alt="Installation GIF">
+  <img src="https://media1.tenor.com/m/7De4zXzN0iYAAAAC/death-note-light-yagami.gif" width="500" alt="Installation GIF">
 </div>
 
 ---
