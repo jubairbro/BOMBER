@@ -102,6 +102,6 @@ bomb
     </tr>
   </table>
   <br>
-  <p>© 2026 SENSEI Tool | Version 2.0</p>
+  <p>© 2026 BOMB SENSEI Tool | Version 1.0.2</p>
 </div>
-``
+
