@@ -84,7 +84,7 @@ bomb
 
 <div align="center">
   <p>This tool is intended for educational and research purposes only. The developer is not responsible for any misuse or damage caused by this program. Use it at your own risk and only on systems you have explicit permission to test.</p>
-  <img src="https://c.tenor.com/UcIndfM1xgYAAAAd/tenor.gif" width="250">
+  <img src="https://media1.tenor.com/m/9SQNOsNr3OwAAAAC/jujutsukaisen-anime.gif" width="250">
 </div>
 
 ---
